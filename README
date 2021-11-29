@@ -1,0 +1,14 @@
+# Create Network So Containers can talk to each other:
+
+- docker network create -d bridge oculyze-network
+
+# Create MongoDB Container
+docker-compose -f db db/docker-compose.yaml up -d
+
+# Create API Container
+docker-compose -f db api/docker-compose.yaml up -d
+
+# Testing API using this endpoint
+-  localhost:8000/foo?q
+
+It will store a string in our DB returning the input str + 'bar'
