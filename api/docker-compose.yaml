@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: oculyzeapi
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: oculyzeapi:latest
+    command: bash -c "python3 /usr/app/main.py"
+    ports:
+      - 8000:8000
+
+networks:
+  default:
+    external:
+      name: oculyze-network
