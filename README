@@ -1,3 +1,6 @@
+# Virtualenv
+To run this project one must create a virtualenv using the requirments.txt file inside api/app
+
 # Create Network So Containers can talk to each other:
 
 - docker network create -d bridge oculyze-network
