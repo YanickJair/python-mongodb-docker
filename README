@@ -9,7 +9,7 @@ To run this project one must create a virtualenv using the requirments.txt file 
 docker-compose -f db/docker-compose.yaml up -d
 
 # Create API Container
-docker-compose -f db api/docker-compose.yaml up -d
+docker-compose -f api/docker-compose.yaml up -d
 
 # Testing API using this endpoint
 -  localhost:8000/foo?q
