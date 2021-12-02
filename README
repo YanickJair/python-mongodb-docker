@@ -6,7 +6,7 @@ To run this project one must create a virtualenv using the requirments.txt file 
 - docker network create -d bridge oculyze-network
 
 # Create MongoDB Container
-docker-compose -f db db/docker-compose.yaml up -d
+docker-compose -f db/docker-compose.yaml up -d
 
 # Create API Container
 docker-compose -f db api/docker-compose.yaml up -d
